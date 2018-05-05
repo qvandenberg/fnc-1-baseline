@@ -1,0 +1,70 @@
+/* Use css normalize ::-webkit-search-results-buttonnecolas.github.io/normalise.css */
+/* CSS tricks for resources on flex boxes */
+
+/* css-tricks.com */
+/* Make website designs in Sketch */
+
+h1 {
+    display: flex;
+    margin-top: 30px;
+    width: 50%;
+    border: 3px solid red;
+    align-items: center;
+    vertical-align: center;
+    background: #EAF4F3;
+}
+
+form {
+    display: block;
+    border: 1px solid green;
+    align-items: center;
+
+}
+
+.navigation {
+    
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    }
+
+.navigation p {
+    vertical-align: center;
+}
+
+ .left-side-box {
+     display: flex;
+ }   
+
+.row {
+    margin-bottom: 20px;
+}
+
+.navigation.row {
+    margin-bottom: 20px;
+}
+
+p {
+    display: inline;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    font-size: 1.2em;
+    background: #3CF2DF;
+}
+
+.navigation p {
+    margin-right: 1rem;
+    padding: 5px 15px 5px 15px;
+    background: lightblue;
+    border-top-right-radius: 30px;
+
+}
+
+.contact-us {
+    text-decoration: underline;
+    flex-direction: row;
+    align-self: flex-end;
+}
