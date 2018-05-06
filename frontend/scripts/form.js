@@ -1,11 +1,10 @@
 // Verify that URL exists
 
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-        alert("URL must be filled out");
-        return false;
-    }
 
-    
-}
+document.getElementById("submitBtn").addEventListener("click", function(){
+    console.log("Click registered");
+    window.location.href = '/processed';
+
+});
+
+

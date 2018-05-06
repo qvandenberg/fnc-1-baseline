@@ -21,6 +21,11 @@ form {
 
 }
 
+#reset {
+    font-size: 1.8em;
+    border: 1px solid green;
+}
+
 .navigation {
     
     align-items: center;
