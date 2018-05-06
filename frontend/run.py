@@ -34,4 +34,5 @@ def processed(article=None):
 if __name__ == '__main__':
         APP.secret_key = 'secret key'
         APP.config['SESSION_TYPE'] = 'filesystem'
-        APP.run(debug=True,port=5000)
+        # APP.run(debug=True,port=5000)
+        APP.run()
