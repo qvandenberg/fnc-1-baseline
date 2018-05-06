@@ -3,43 +3,65 @@
 
 /* css-tricks.com */
 /* Make website designs in Sketch */
+
 .body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding-top: 30px;
+    align-content: center;
     animation: fadeIn 1.5s ease-in;
-    /* background: linear-gradient(#00c6fb 0%, #005bea 100%); */
-    background-color: red;
+    background: linear-gradient(to top, #91e2f8 10%, #005bea 100%);
 }
 
-form {
+/* form {
     margin: auto;
+} */
+.container {
+    text-align: center;
 }
 
 h1 {
     display: flex;
-    margin-top: 30px;
-    width: 50%;
+    margin-top: 15px;
+    width: 70%;
+    /* float: left; */
     border: 2px solid green;
     align-items: center;
     vertical-align: center;
-    /* background: #EAF4F3; */
+    text-align: center;
 }
 
 form {
-    display: block;
-    border: 1px solid green;
+    /* display: block; */
+    border: 1px solid orange;
     align-items: center;
-
 }
 
-#reset {
+.reset {
     font-size: 1.8em;
+    margin-left: 15px;
+    margin-top: 140px;
+    color: black;
     border: 1px solid green;
 }
 
+#homeinstruction{
+    margin-top: 20px;
+}
 
-p {
-    display: inline;
+#hometitle{
+    margin-top: 120px;
+    flex-grow: 10;
+    font-size: 3em;
+    color: white;
+}
+
+.move-up{
+    margin-top: 20px;
+}
+
+html, body {
+    min-height: 100%;
 }

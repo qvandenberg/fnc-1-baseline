@@ -5,13 +5,14 @@
         <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap-theme.min.css') }}"></link>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css"></link>
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">    
-        <title>AA - Article analysis</title>
+        <title>Article analysis</title>
     </head>
 
     <body class="body">
-        <div><a id="reset" href="/">Reset</a></div>
+        <div><a class="reset" href="/">Reset</a></div>
         <div class="container">
-            <h2>Insert URL</h2>
+            <h2 id="hometitle">Stance-off</h2>
+            <h4 id="homeinstruction">Insert URL</h2>
             <form action="" method="post">
                     {{ form.hidden_tag() }}
                     <p>
@@ -20,8 +21,7 @@
                     </p>
                     <p>{{ form.submit() }}</p>
             </form>
-            <br>
-                    
+            <br>         
         </div>    
     </body>
 

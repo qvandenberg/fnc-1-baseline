@@ -4,27 +4,28 @@
         <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap-theme.min.css') }}"></link>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}"></link>
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">    
-        <title>AA - Article analysis</title>
+        <title>Results</title>
     </head>
         
-{% block body %}
     <body class="body">
-        <div><a id="reset" href="/">Home</a></div>
-        <div>
-            <h4 id="article-link">Analysing article located at: {{ article.url }}</h4>
+        <div><a class="reset" href="/">Home</a></div>
+        <div class="container">
+            <div>
+                <h4 id="article-link">Analysing article located at: {{ article.url }}</h4>
+            </div>
+            <div class="stance-rating">
+                    <p>Stance: {{ article.verdict}}</p>
+            </div>
         </div>
         <br/>
-        <div class="article-title">
-            <h1>{{ article.header }}</h1>
-            
-        </div>
-        <div class="article-body">
-            <p>{{ article.body }}</p>
-        </div>
-        <div class="stance-rating">
-            <p>Stance: {{ article.verdict}}</p>
+        <div class="container">
+            <div class="article-title">
+                <h1>{{ article.header }}</h1>
+            </div>
+            <div class="article-body">
+                <p>{{ article.body }}</p>
+            </div>
         </div>
     </body>
 
-{% endblock %}
 </html>
