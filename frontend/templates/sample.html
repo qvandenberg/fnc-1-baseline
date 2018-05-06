@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html>
     <head>
         <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
         <link rel="stylesheet" href="static/bootstrap-theme.min.css">
@@ -11,20 +12,11 @@
     <body>
         <div><a id="reset" href="/">Reset</a></div>
         <div>
-            <h4 id="article-link">Analysing article located at: {{ article.url }}</h4>
+            <h3 id="article-link">Displaying analysis for article: {{ urlpath }}</h3>
         </div>
         <br/>
-        <div class="article-title">
-            <h1>{{ article.header }}</h1>
-            
-        </div>
-        <div class="article-body">
-            <p>{{ article.body }}</p>
-        </div>
-        <div class="stance-rating">
-            <p>Stance: {{ article.verdict}}</p>
-        </div>
+
     </body>
 
-{% endblock %}
+{% endblock  %}
 </html>
