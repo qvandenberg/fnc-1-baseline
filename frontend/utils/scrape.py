@@ -43,5 +43,6 @@ class extractArticle():
         self.imageurl=""
 
     def article_contents(self):
+        # use goose3 or beautifulsoup API here
         article = {'header':self.header, 'body':self.body, 'imageurl':self.imageurl}
         return article

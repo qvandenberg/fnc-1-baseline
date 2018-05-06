@@ -1,15 +1,15 @@
 
     <head>
-        <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
-        <link rel="stylesheet" href="static/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" media="screen" href ="{{ url_for('static',filename='bootstrap.min.css') }}"></link>
+        <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap-theme.min.css') }}"></link>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}"></link>
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">    
         <title>AA - Article analysis</title>
     </head>
         
 {% block body %}
-    <body>
-        <div><a id="reset" href="/">Reset</a></div>
+    <body class="body">
+        <div><a id="reset" href="/">Home</a></div>
         <div>
             <h4 id="article-link">Analysing article located at: {{ article.url }}</h4>
         </div>

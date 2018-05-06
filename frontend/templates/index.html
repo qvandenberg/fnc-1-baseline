@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
-        <link rel="stylesheet" href="static/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" media="screen" href ="{{ url_for('static',filename='bootstrap.min.css') }}"></link>
+        <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap-theme.min.css') }}"></link>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css"></link>
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">    
         <title>AA - Article analysis</title>
     </head>
-        
 
-{% block content %}
-    <body id="homepage">
+    <body class="body">
         <div><a id="reset" href="/">Reset</a></div>
-            <div class="container">
-                <h2>Insert URL</h2>
-                <form action="" method="post">
-                        {{ form.hidden_tag() }}
-                        <p>
-                            {{ form.url.label }}<br>
-                            {{ form.url(size=32, value="https://") }}
-                        </p>
-                        <p>{{ form.submit() }}</p>
-                </form>
-                <br>
-                       
-            </div>    
-            </body>
-
-{% endblock content %}
+        <div class="container">
+            <h2>Insert URL</h2>
+            <form action="" method="post">
+                    {{ form.hidden_tag() }}
+                    <p>
+                        {{ form.url.label }}<br>
+                        {{ form.url(size=32, value="https://") }}
+                    </p>
+                    <p>{{ form.submit() }}</p>
+            </form>
+            <br>
+                    
+        </div>    
+    </body>
 
 <script type="text/javascript" href="scripts/form.js"></script>
 

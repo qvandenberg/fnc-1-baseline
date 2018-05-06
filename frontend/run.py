@@ -17,9 +17,14 @@ def route():
                 downloadArticle.article_contents()
                 articleInfo.set_header(downloadArticle.header)
                 articleInfo.set_body(downloadArticle.body)
+                # analyse stance
 
                 return render_template('/processed.html', article=articleInfo)
         return render_template('index.html', title='Submit article', form=form)
+
+
+
+
 
 @APP.route('/processed', methods=['GET', 'POST'])
 def processed(article=None):
