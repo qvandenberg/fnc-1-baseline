@@ -39,8 +39,8 @@ class extractArticle():
     def __init__(self, url):
         self.url = url
         self.header ="sample header"
-        self.body="sample body"
         self.imageurl=""
+        self.body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nisl pellentesque diam dictum varius. Vivamus scelerisque porttitor magna sed tristique. Sed id magna suscipit, iaculis nulla aliquam, pretium augue. Pellentesque ac quam et est rhoncus scelerisque. Nullam quis libero non nibh hendrerit sagittis. Sed id placerat ipsum, a pellentesque mi. Donec facilisis urna et tincidunt ornare. Morbi arcu ex, volutpat non finibus eu, tincidunt ac neque. Praesent interdum vehicula est, sit amet interdum quam tempus sit amet. Pellentesque lorem justo, bibendum tempor ante in, rutrum facilisis eros. Curabitur scelerisque, metus et congue rhoncus, justo lorem finibus diam, sit amet mattis augue augue eu lectus. Nam mattis massa ac venenatis tempus. Nullam mauris urna, tempus ut tincidunt non, consequat non ante. Curabitur rutrum malesuada lorem, id rutrum elit consectetur id. Nunc at blandit nibh. Praesent ut libero placerat nibh eleifend sollicitudin. Quisque ligula velit, vulputate non libero id, tincidunt tincidunt ligula. Vivamus feugiat tincidunt enim, eget facilisis dolor tincidunt a. Donec neque turpis, consequat eu porta sit amet, maximus et tortor. Vivamus vestibulum sodales eros, in scelerisque felis finibus sit amet. Vivamus sodales, nulla ac scelerisque finibus, mauris dolor varius eros, at vehicula nulla elit ut turpis. Sed rutrum nunc at odio luctus porta. Aliquam quam elit, congue ac risus a, consectetur facilisis neque. Cras lacinia diam eget mi laoreet, ac lacinia tellus faucibus."
 
     def article_contents(self):
         # use goose3 or beautifulsoup API here
